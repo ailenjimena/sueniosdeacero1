@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Sueños de Acero</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <meta name="description" content="Contactate con Sueños de Acero. Estamos para ayudarte con tus dudas o consultas.">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="botones">
+                <li><a href="../index.html" class="boton">Inicio</a></li>
+                <li><a href="./nosotros.html" class="boton">Nosotros</a></li>
+                <li><a href="./catalogo.html" class="boton">Catálogo</a></li>
+                <li><a href="./preguntas.html" class="boton">Preguntas Frecuentes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contacto</h1>
+        <section class="formulario">
+            <form action="" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]+" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentarios">Comentarios adicionales</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribí tu mensaje..."></textarea>
+                </div>
+
+                <input type="submit" value="Enviar" class="boton">
+            </form>
+
+            <div class="form-footer">
+                <p>Gracias por elegirnos. ¡Pronto nos contactaremos!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Seguinos:</strong> @sueniosdeacero | WhatsApp: 123456789</p>
+    </footer>
+</body>
+</html>
+

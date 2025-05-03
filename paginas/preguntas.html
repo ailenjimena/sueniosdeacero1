@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes | Sueños de Acero</title>
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>   
+    <header>
+        <nav>
+            <ul class="botones">
+                <li><a href="../index.html" class="boton">Inicio</a></li>
+                <li><a href="./catalogo.html" class="boton">Catálogo</a></li>
+                <li><a href="./paginas/nosotros.html" class="boton">Nosotros</a></li>
+                <li><a href="./contacto.html" class="boton">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Preguntas Frecuentes</h1>
+        <section class="faq">
+            <div class="faq-item">
+                <button class="faq-question">¿Cómo puedo realizar una compra en línea?</button>
+                <div class="faq-answer">
+                    <p>Realizar una compra en línea es muy fácil. Solo tienes que navegar por nuestras categorías de productos, seleccionar los que más te gusten, añadirlos al carrito y proceder al pago. Aceptamos varias formas de pago, incluidas tarjetas de crédito, débito y plataformas de pago en línea.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Hacen envíos a todo el país?</button>
+                <div class="faq-answer">
+                    <p>Sí, realizamos envíos a todo el país. Los tiempos de entrega varían según la ubicación, pero siempre trabajamos para garantizar que recibas tu pedido lo antes posible. Puedes consultar los tiempos estimados de entrega en el momento de realizar tu compra.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Puedo cambiar o devolver un artículo si no me gusta?</button>
+                <div class="faq-answer">
+                    <p>Claro, ofrecemos una política de devoluciones dentro de los 30 días posteriores a la compra. Los productos deben estar en su estado original, sin usar y con etiquetas. Si deseas hacer una devolución, por favor contacta con nuestro equipo de atención al cliente para recibir las instrucciones detalladas.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Tienen tiendas físicas o solo venden en línea?</button>
+                <div class="faq-answer">
+                    <p>Actualmente, nuestra tienda es 100% en línea, lo que nos permite ofrecer una gran variedad de productos sin las limitaciones de un espacio físico. Sin embargo, siempre estamos trabajando para mejorar la experiencia de compra, y quizás en el futuro exploremos la posibilidad de abrir tiendas físicas.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Cómo sé mi talla al comprar accesorios como pulseras o anillos?</button>
+                <div class="faq-answer">
+                    <p>En cada página de producto, ofrecemos guías de tallas para ayudarte a elegir el tamaño perfecto. Si tienes dudas sobre qué talla seleccionar, no dudes en contactar con nuestro servicio de atención al cliente.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2025 Sueños de Acero — Seguinos: @sueniosdeacero | WhatsApp: 123456789</p>
+    </footer>
+
+    <script>
+        const faqButtons = document.querySelectorAll('.faq-question');
+        faqButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                answer.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
